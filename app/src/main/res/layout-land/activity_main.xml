@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.abnd_quiz.MainActivity"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/linearLayoutStyle">
+            <TextView
+                style="@style/questionStyle"
+                android:text="Question 1 - What is the name of the main family ?"/>
+            <EditText
+                android:id="@+id/family_name_editview"
+                style="@style/basicControlStyle"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linearLayoutStyle">
+            <TextView
+                style="@style/questionStyle"
+                android:text="Question 2 - In which city the story takes place in first season ?"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/rb1_radioButton"
+                    style="@style/basicControlStyle"
+                    android:text="London"/>
+                <RadioButton
+                    android:id="@+id/rb2_radioButton"
+                    style="@style/basicControlStyle"
+                    android:text="Birmingham"/>
+                <RadioButton
+                    android:id="@+id/rb3_radioButton"
+                    style="@style/basicControlStyle"
+                    android:text="Manchester"/>
+                <RadioButton
+                    android:id="@+id/rb4_radioButton"
+                    style="@style/basicControlStyle"
+                    android:text="Oxford"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linearLayoutStyle">
+            <TextView
+                style="@style/questionStyle"
+                android:text="Question 3 - What is the names of Thomas's brothers ?"/>
+            <CheckBox
+                android:id="@+id/chk1_checkBox"
+                style="@style/basicControlStyle"
+                android:text="Arthur"/>
+            <CheckBox
+                android:id="@+id/chk2_checkBox"
+                style="@style/basicControlStyle"
+                android:text="Chris"/>
+            <CheckBox
+                android:id="@+id/chk3_checkBox"
+                style="@style/basicControlStyle"
+                android:text="Bryan"/>
+            <CheckBox
+                android:id="@+id/chk4_checkBox"
+                style="@style/basicControlStyle"
+                android:text="John"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linearLayoutStyle">
+            <TextView
+                style="@style/questionStyle"
+                android:text="Question 4 - Does family like horse racing ?"/>
+            <Switch
+                android:id="@+id/sw_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textOn="true"
+                android:textOff="false"
+                android:showText="true"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valider"
+                android:layout_gravity="right"
+                android:onClick="showResults"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.widget.ScrollView>
